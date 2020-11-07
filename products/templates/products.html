@@ -1,0 +1,8 @@
+<ul>
+	{% for product in products %}
+        <li>{{ product.description }} <a href="{% url 'update_product' product.id %}">Update</a></li> 
+	{% endfor %}
+</ul>
+
+
+<a href="{% url 'create_product' %}">New product</a>
